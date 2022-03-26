@@ -97,7 +97,7 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			'Changes the amount of time you have\nfor hitting a "Marvelous" in miliseconds.',
 			'MarvelousWindow',
 			'int',
-			15);
+			14);
 		option.displayFormat = '%vms';
 		option.scrollSpeed = 1;
 		option.minValue = 1;
