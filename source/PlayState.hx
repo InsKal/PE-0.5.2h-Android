@@ -156,7 +156,7 @@ class PlayState extends MusicBeatState
 	private var timeBarBG:AttachedSprite;
 	public var timeBar:FlxBar;
 	
-	public var marvelous:Int = 0;
+	public var marvelouss:Int = 0;
 	public var sicks:Int = 0;
 	public var goods:Int = 0;
 	public var bads:Int = 0;
@@ -3382,9 +3382,9 @@ class PlayState extends MusicBeatState
 				note.ratingMod = 1;
 				if(!note.ratingDisabled) sicks++;
 			case "marvelous": // marvelous
-				totalNotesHit += 1;
-				note.ratingMod = 1;
-				if(!note.ratingDisabled) marvelous++;
+				totalNotesHit += 1.25;
+				note.ratingMod = 1.25;
+				if(!note.ratingDisabled) marvelouss++;
 
 		}
 		note.rating = daRating;
@@ -3418,7 +3418,9 @@ class PlayState extends MusicBeatState
 			}
 		}
 
-		/* if (combo > 60)
+		/* if (combo > 90)
+				daRating = 'marvelous';
+			else if (combo > 60)
 				daRating = 'sick';
 			else if (combo > 12)
 				daRating = 'good'
